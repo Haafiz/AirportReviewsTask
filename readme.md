@@ -44,6 +44,10 @@ Endpoint `/api/{airport}/stats`
 Response will be that specific airport stat object or empty object
 
 ### Get Reviews for specific Airport (optionally filter by minimum rating)
+Endpoint `/api/{airport}/reviews`
+
+or filter by minimum rating
+
 Endpoint `/api/{airport}/reviews/{minRating}`
 
 Response will be collection of reviews of airport and possibly also on the base of minRating
