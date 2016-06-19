@@ -32,7 +32,6 @@ class AirportReviewsController extends Controller
     public function getReviews($airport_name, $minRating = 0)
     {
         $reviews = $this->model->getReviewsByAirport($airport_name, $minRating);
-        return count($reviews);
         if (count($reviews)) {
             return ['reviews' => $reviews];
         } else {

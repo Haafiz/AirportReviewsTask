@@ -15,11 +15,15 @@ For testing purpose, only API tests are available at this time, as this API do n
 
 API tests are being written using CodeCeption. So to run those tests, you need to have Codeception, which will be in your vendor/bin directory. So you can simply use following command on your terminal:
 `vendor/bin/codecept run api`
+or for more verbose use:
+`vendor/bin/codecept run api -vv`
 
 If you face any difficulty or want to know more about installation or usage of code ception, then following are some resources:
 In case you need more basic level help with CodeCeption and its installation, find it here on: [My Blog Post on Getting started with Code Ception](http://haafiz.me/development/api-testing-installing-and-using-codeception)
 
 Or you can consult [CodeCeption documentation](http://codeception.com/quickstart)
+
+Database can be separately setup for Tests but it will take more time on populate and cleanup. So assume that you have proposed (sent) database already there with dataset. Expectation and Ids used in test cases are based on that particular dataset.
 
 ## Usage
 To Run API endpoints you need to run:
@@ -28,7 +32,6 @@ You can skip index.php if you have mod_rewrite working on apache.
 
 ## API Endpoints
 Here are available endpoints, and all of them are accessible through HTTP method GET
-
 
 ### Get All Airports stats
 Endpoint: /api/all/stats

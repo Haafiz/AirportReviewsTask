@@ -1,4 +1,9 @@
 class_name: ApiTester
 modules:
-    enabled:
-        - \Helper\Api
+    enabled: [PhpBrowser, REST, Asserts]
+    config:
+        PhpBrowser:
+            url: http://localhost/dreamlines/public/api
+        REST:
+            depends: PhpBrowser
+            url: http://localhost/dreamlines/public/api
