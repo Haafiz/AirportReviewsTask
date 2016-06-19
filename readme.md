@@ -27,20 +27,23 @@ Database can be separately setup for Tests but it will take more time on populat
 
 ## Usage
 To Run API endpoints you need to run:
-http://your/server/path/public/index.php/{API_ENDPOINT}
+`http://your/server/path/public/index.php/{API_ENDPOINT}`
 You can skip index.php if you have mod_rewrite working on apache.
 
 ## API Endpoints
 Here are available endpoints, and all of them are accessible through HTTP method GET
 
 ### Get All Airports stats
-Endpoint: /api/all/stats
+Endpoint: `/api/all/stats`
+
 Response will be collection of airports stats.
 
 ### Get Specific Airport Stat
-Endpoint /api/{airport}/stats
+Endpoint `/api/{airport}/stats`
+
 Response will be that specific airport stat object or empty object
 
 ### Get Reviews for specific Airport (optionally filter by minimum rating)
-Endpoint /api/{airport}/reviews/{minRating}
+Endpoint `/api/{airport}/reviews/{minRating}`
+
 Response will be collection of reviews of airport and possibly also on the base of minRating
